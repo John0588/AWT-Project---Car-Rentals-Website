@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <title>Car Rentals</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js"></script>
+</head>
+<body>
+  
+ <div class="info">
+  <div class="logo">
+  <img src="images/myLogo1.jpeg" alt="No Image"/>
+  </div>
+  <div class="contact">
+    <p>Tel. Call: 1-800-986-4566 | Phone Call: 1- 647-896-7562</p>
+  </div>
+  <div class="registration">
+    <div class="dropdown">
+      <button onclick="mySignIn()" class="dropbtn" id="mySignInBtn">SIGN IN</button>
+      <div id="mySignIn_Btn" class="dropdown-content1">
+        <form  method="" action="">   
+          <input type="email" name="" placeholder="Email: sample@yahoo.com" id="mail" class="eMail" required/>
+          <input type="password" name="" placeholder="Your Password: ****** " id="pass" class="p_assword" required/>
+          <input type="submit" class="my_Button" onclick="in_Form()" value="SEND" /> 
+        </form>
+        <p id="sign_In">No account? Please Sign Up!</p>
+      </div>
+    </div>
+      
+    <div class="dropdown">
+      <button onclick="mySignUp()" class="dropbtn" id="mySignUpBtn">SIGN UP</button>
+      <div id="mySignUp_Btn" class="dropdown-content2">
+        <form id="form" method="" action="">   
+          <input type="text" name="" placeholder="Firts Name: " id="f_Name" required/>
+          <input type="text" name="" placeholder="Last Name: " id="l_Name" required/>
+          <input type="email" name="" placeholder="Email: sample@yahoo.com" class="eMail" required/>
+          <input type="password" name="" placeholder="Your Password: ****** " class="p_assword" required/>
+          <input type="submit" class="my_Button" onclick="up_Form()" value="SEND" /> 
+        </form>
+        <p id="sign_Up">Already have account? Please Sign In!</p>
+      </div>
+    </div>
+  </div>
+ </div>
+ <nav class="mobile-menu">
+  <label for="show-menu" class="show-menu">
+    <span>
+    <img src="images/myLogo1.jpeg" alt="No Image"/>
+    </span>
+    <div class="lines"></div>
+  </label>
+   <input type="checkbox" id="show-menu">
+    <ul id="menu">
+    <li><a href="./index.html">HOME</a></li>
+    <div class="dropdown">
+      <button onclick="myAbout()" class="dropbtn">ABOUT US</button>
+      <div id="myAboutBtn" class="dropdown-content0">
+        <a href="./about.html">ABOUT TO RENT</a>
+        <a href="./about2.html">ABOUT ACTIVITIES</a>
+      </div>
+     </div>
+    <li><a href="./contact.html">CONTACT US</a>		</li>
+    <li><a href="./services.html">SERVICES</a></li>
+    <li><a href="./rent.html">RENT</a></li>
+    <li><a id="signInBtn" href="./signIn.html">Sign IN</a></li>
+    <li><a id="signUpBtn" href="./signUp.html">Sign UP</a></li>
+   </ul>
+  </nav>
+  <main style="background-image: url('images/home.jpg');" class="contactPage"> 
+    <h1>CONTACT US</h1>
+    <div id="contactPage">
+      <!-- Left Section -->
+      <div class="contactForm">
+        <h3>Contact Us!</h3>
+        <p>Please, Keep in Touch!</p>
+        <p style="color: red; font-size: 15px; font-family: fantasy;"  id="contactError"></p>  
+        <p style="color: red; font-size: 15px; font-family: fantasy;" id="contactMessage"></p>  
+        <form id="contactForm" method="" action="">
+          <input type="text" name="" placeholder="Full Name: " id="fName" required/>
+          <input type="email" name="" placeholder="Email: " id="email" required/>
+          <input type="text" name="" placeholder="Subject: " id="subject" required/>
+          <textarea type="text" name="" cols="50" id="message" placeholder="Your Message... ..." ></textarea>
+          <input type="submit" class="myButton" onclick="contact()" value="SEND" />    
+        </form>
+      </div>
+      <!-- Right Section -->
+      <div class="contactMap">
+        <h3>This is our main office</h3>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.080323222471!2d-79.27214518450111!3d43.688093479120134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce95017854ff%3A0xfb975793ff66a2d3!2s1463%20Kingston%20Rd%2C%20Scarborough%2C%20ON%20M1N%201R5!5e0!3m2!1sen!2sca!4v1632423748284!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>      
+        </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer id="myFooter">
+    <div class="footer">
+      <div class="footerAbout">
+        <i><strong><p style="color: rgb(255, 0, 221); font-size: medium; margin: 0 0 .5rem 0;">ABOUT US</p></strong></i>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. 
+        </p>
+      </div>
+      <div class="mediaIcon">
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4tZ2IifQ%3D%3D%22%7D" class="fa fa-twitter"></a>
+        <a href="https://accounts.google.com/servicelogin/webreauth?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/home/?originalSubdomain=ca" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+      </div>
+      <div class="footerPages">
+        <strong><p style="color: white; font-size: medium; margin: 0 0 .5rem 0;">PAGES</p></strong>
+        <ul>
+          <a href="./about.html" ><li>ABOUT US</li></a>
+          <a href="./services.html" ><li>SERVICES</li></a>
+          <a href="./contact.html" ><li>CONTACT US</li></a>
+          <a href="./signIn.html" ><li>SIGN IN</li></a>
+          <a href="./signUp.html" ><li>SIGN UP</li></a>
+        </ul>
+      </div>     
+    </div>
+    <div class="footerName">
+      <p class="copyright">&copy tRios Student 2022 | <a href="https://www.facebook.com/">John Almirol</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,1556 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bonheur+Royale&family=Caramel&family=Cormorant+Garamond:ital,wght@1,300&family=EB+Garamond&family=Grechen+Fuemen&family=Grey+Qo&family=Kaushan+Script&family=Lobster&family=Raleway:wght@300&family=Satisfy&family=Scheherazade+New&family=Spectral:wght@200&display=swap');
+
+:root {
+/*Font Style*/
+  --fs1: "Grey Qo";
+  --fs2: "Grechen Fuemen";
+  --fs3: "Scheherazade New";
+  --fs4: "Raleway";
+  --fs5: "Bonheur Royale";
+  --fs6: "Caramel";
+  --fs7: "Lobster";
+  --fs8: "EB Garamond";
+  --fs9: "Architects Daughter";
+  --fs10: "Cormorant Garamond";
+  --fs11: "Satisfy";
+  --fs12: "Spectral";
+  --fs13: "Kaushan Script";
+}
+
+*{
+ margin:0;
+ padding:0;
+}
+body {
+ font-family: Helvetica, Arial, sans-serif;
+ font-size:16px;
+}
+/* Menu Info Section */
+.info {
+ border: black;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ padding: 20px;
+ text-align: center;
+ gap: 10rem;
+}
+.logo img {
+  vertical-align: middle;
+  width: 180px;
+  height: 80px;
+  background: gray;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+  cursor: pointer;
+}
+.contact {
+  border:.1rem black solid;
+  border-radius: 50px;
+  margin: auto;
+  padding: 12px;
+}
+.registration p {
+  border: black;
+  float: left;
+  margin: 40px;
+  cursor: pointer;
+
+}
+/*Menu Section */
+span img {
+  width: 50px;
+  height: 30px;
+}
+.mobile-menu {
+ display:block;
+ width:100%;
+ background: #8aa8bd;
+ line-height: 1.6em;
+ font-weight: 400;
+ width:100%;
+ text-align:center;
+ position: relative;
+ margin:0 auto;
+}
+.mobile-menu ul {
+ list-style-type:none;
+ margin: 0 auto;
+ padding-left:0;
+ text-align:center;
+ width:100%;
+ background: Black;
+}
+.mobile-menu li {
+ display:inline-block;
+}
+.mobile-menu li a {
+ display:block;
+ min-width:140px;
+ text-align: center;
+ font-family: var(--fs9);
+ font-weight: 900;
+ color:yellow;
+ text-transform:uppercase;
+ background: Black;
+ text-decoration: none;
+ margin-left:-5px;
+ padding: 10px 0;  
+ -webkit-transition: all 0.4s ease 0s;
+ -moz-transition: all 0.4s ease 0s;
+ -ms-transition: all 0.4s ease 0s;
+ -o-transition: all 0.4s ease 0s;
+ transition: all 0.4s ease 0s;
+}
+
+.mobile-menu li:hover a {
+  color:rgb(0, 255, 76);
+  background: Black;
+  font-size: 20px;
+  font-family: var(--fs13);
+}
+.mobile-menu li:hover ul a {
+ background: #f3f3f3;
+ color: #2f3036;
+ height: 40px;
+ line-height: 40px;
+}
+.mobile-menu li:hover .mobile-menu ul a:hover {
+ color: #4db3ff;
+}
+.mobile-menu li ul {
+ display: none;
+}
+.mobile-menu li ul li {
+ display: block;
+ float: none;
+}
+.mobile-menu li ul li a {
+ width: auto;
+ min-width: 100px;
+ padding: 0 20px;
+}
+.mobile-menu .show-menu {
+ text-decoration: none;
+ color: #fff;
+ background: #8aa8bd;
+ text-align: center;
+ padding: 10px 15px;
+ display: none;
+ cursor: pointer;
+ text-transform: uppercase;
+}
+.mobile-menu .show-menu span{
+ padding-left: 25px;
+}
+.mobile-menu input[type=checkbox]{
+ display: none;
+}
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+ display: block;
+}
+/*  */
+.dropbtn {
+  background-color:#ccddee;
+  color: white;
+  font-family: var(--fs9);
+  font-weight: 900;
+  color: yellow;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: Black;
+  text-decoration: none;
+  margin-left: -5px;
+  padding: 10px 0;
+  display: block;
+  min-width: 140px;
+  text-align: center;
+}
+.dropbtn:hover {
+  color:rgb(0, 255, 76);
+  background: Black;
+  font-size: 20px;
+  font-family: var(--fs13);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content0 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  padding: 5px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content0 a {
+  color: yellow;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+  background: Black;
+}
+.dropdown a:hover {
+  background: Black;
+}
+.show {display: block;}
+/* Home Section */
+.home {
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 100%; height: 85vh;
+  margin: -2rem 0 0 0;
+}
+.home h1 {
+  padding: 3rem 0 0 0;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #f3f3f3;
+  font-family: var(--fs8);
+}
+#home {
+  border: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  text-align: center;
+  gap: 10rem;
+  margin-top: 20px;
+}
+/* Left */
+.reservationForm {
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5rem 0 0 0;
+}
+.reservationForm h3 {
+  margin: 1rem 0 0 0;
+  font-family: var(--fs3);
+}
+.reservationForm p {
+  margin: 1rem 0 0 0;
+  font-family: var(--fs1);
+  font-size: 30px;
+  font-weight: 700;
+}
+.myLocation .location {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px rgb(173 175 177 / 20%);
+  margin: 2rem 0 0 0;
+}
+div.elem-group {
+  margin: 0 0 0 3.5rem;
+  width: 40%;
+  display: inline-block;
+  float: left;
+}
+div.elem-group input {
+  width: 85%;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px rgba(173, 175, 177, 0.2);
+
+}
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
+.button {
+  text-align: left;
+  margin: 0 0 0 6rem;
+}
+.button .myButton {
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 1rem 0 0 0;
+  width: 10rem;
+  font-family: var(--fs8);
+  font-weight: 900;
+}
+.button .myButton:hover {
+  background: black;
+  color: white;
+  border: yellow solid;
+  font-family: var(--fs9);
+  font-weight: 900;
+}
+.reservationForm hr {
+  margin: 1rem 0 0 0;
+}
+/* Right */
+.reservationImage {
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 20px;
+  background-image: linear-gradient(to right, rgba(33, 143, 187, 0), rgb(54, 92, 107));
+  margin: 5rem 0 0 0;
+}
+.image {
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 20px;
+  background-color: black;
+  width: 70%;
+  height: 35vh;
+  margin: 5rem auto;
+}
+.reservationImage h3 {
+  margin: 3rem 0 -5rem 0;
+  font-family: var(--fs10);
+  font-weight: 900;
+  color: white;
+  padding: 20px;
+}
+.reservationImage p {
+  color: white;
+  font-family: var(--fs5);
+  margin: 0 2rem 2rem 2rem;
+  text-align: justify;
+}
+.image img {
+  width: 80%;
+  height: 25vh;
+  border-radius: 20px;
+  margin: 1rem 0 2rem 0;
+}
+.image p {
+  color: white;
+  font-family: var(--fs10);
+}
+ /* About1 Section */
+.about {
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 100%; 
+  height: 83vh;
+}
+.about h1 {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  text-decoration-line: underline;
+  color: black;
+  font-family: var(--fs9);
+}
+.about p {
+  text-align: justify;
+  font-family: var(--fs4);
+  font-size: 15px;
+  padding: 4rem 2rem 0 2rem;
+  color: white;
+}
+ #about {
+  border: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  text-align: center;
+  gap: 10rem;
+}
+/* Left */
+.aboutImage {
+  border-radius: 20px;
+  margin: 0 0 0 0;
+}
+.aImage {
+  width: 70%;
+  height: 35vh;
+  margin: 5rem auto;
+}
+.aboutImage h3 {
+  margin: 1rem 0 0 0;
+  font-family: var(--fs10);
+  font-weight: 900;
+  color: white;
+  padding: 20px;
+}
+.aboutImage p {
+  color: white;
+  font-family: var(--fs5);
+  margin: 0 2rem 2rem 2rem;
+}
+.aImage img {
+  width: 100%;
+  height: 35vh;
+  border-radius: 20px;
+}
+.aImage p {
+  text-align: justify;
+  color: white;
+  font-family: var(--fs10);
+  margin: -2rem 0 0 0;
+}
+/* Right */
+.aboutForm {
+  margin: 5rem 0 0 0;
+}
+.message p {
+  text-align: justify;
+  font-size: 12px;
+  color: rgb(249, 249, 252);
+  height: 40vh;
+  overflow: scroll;
+  background: .10rem rgb(59, 58, 58) solid;
+  box-shadow: 0 10px 10px rgba(17, 16, 17, 0.4);
+}
+.message h1 {
+  color: rgb(197, 250, 5);
+  font-family: var(--fs10);
+  font-weight: 900;
+}
+/* About2 Section */
+.about2 {
+  border: black;
+}
+.about2 h1 {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  text-decoration-line: underline;
+  color: rgb(252, 3, 3);
+  font-family: var(--fs9);
+}
+.about2 p {
+  margin: 2rem 0 0 0;
+  padding: 2rem;
+  font-family: var(--fs10);
+  font-weight: 600;
+}
+#about2 {
+  border: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  text-align: center;
+  gap: 10rem;
+  margin-top: 20px;
+}
+.about_1 img {
+  width: 18rem;
+  height: 15rem;
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 20px;
+}
+.about_1 p {
+  margin: -1rem 0 0 0;
+  font-family: var(--fs9);
+  color: #0b568f;
+}
+.about_2 img {
+  width: 18rem;
+  height: 15rem;
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 20px;
+}
+.about_2 p {
+  margin: -1rem 0 0 0;
+  font-family: var(--fs9);
+  color: #0b568f;
+}
+.about_3 img {
+  width: 18rem;
+  height: 15rem;
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 20px;
+}
+.about_3 p {
+  margin: -1rem 0 0 0;
+  font-family: var(--fs9);
+  color: #0b568f;
+}
+#about2 p {
+  margin: 0 0 0 0;
+}
+#about3 {
+  border: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  text-align: center;
+  gap: 10rem;
+  margin-top: 20px;
+}
+.about_4 img {
+  width: 18rem;
+  height: 15rem;
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 20px;
+}
+.about_4 p {
+  margin: -1rem 0 0 0;
+  font-family: var(--fs9);
+  color: #0b568f;
+}
+.about_5 img {
+  width: 18rem;
+  height: 15rem;
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 20px;
+}
+.about_5 p {
+  margin: -1rem 0 0 0;
+  font-family: var(--fs9);
+  color: #0b568f;
+}
+.about_6 img {
+  width: 18rem;
+  height: 15rem;
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 20px;
+}
+.about_6 p {
+  margin: -1rem 0 0 0;
+  font-family: var(--fs9);
+  color: #0b568f;
+}
+ /* Contact Section */
+ .contactPage {
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 100%; 
+  height: 85vh;
+  margin: -2rem 0 0 0;
+}
+.contactPage h1 {
+  padding: 5rem 0 0 0;
+  text-align: center;
+  text-decoration-line: underline;
+  color: white;
+  font-family: var(--fs2);
+}
+#contactPage {
+  border: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  text-align: center;
+  gap: 10rem;
+  margin-top: 20px;
+}
+.contactForm form {
+  padding: 20px;
+  margin: 20px 0 0 0;
+}
+.contactForm p {
+  margin: 2rem 0 0 0;
+  font-family: var(--fs5);
+  font-size: 30px;
+  font-family: 900;
+}
+.contactForm h3 {
+  margin: 5rem 0 0 0;
+  font-family: var(--fs8);
+  font-size: 30px;
+  font-family: 900;
+  color: rgb(19, 128, 179);
+}
+form input, form textarea  {
+  width: 60%;
+  margin: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+}
+form #fName {
+  border-radius: 20px;
+}
+form #email {
+  border-radius: 20px;
+}
+form #subject {
+  border-radius: 20px;
+}
+form textarea {
+  border-radius: 5px;
+}
+form .myButton {
+  width: 40%;
+  border-radius: 10px;
+  border: none;
+}
+/* Left */
+.reservationForm {
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  background-image: linear-gradient(to left, rgba(33, 143, 187, 0), rgb(54, 92, 107));
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5rem 0 0 0;
+}
+.reservationForm h3 {
+  margin: 1rem 0 0 0;
+  font-family: var(--fs3);
+}
+.reservationForm p {
+  margin: 1rem 0 0 0;
+  font-family: var(--fs1);
+  font-size: 30px;
+  font-weight: 700;
+}
+.myLocation .location {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px rgb(173 175 177 / 20%);
+  margin: 2rem 0 0 0;
+}
+div.elem-group {
+  margin: 1rem 0 0 3.5rem;
+  width: 40%;
+  display: inline-block;
+  float: left;
+  color: white;
+}
+div.elem-group input {
+  width: 85%;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px rgba(173, 175, 177, 0.2);
+
+}
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
+.button {
+  text-align: left;
+  margin: 0 0 0 6rem;
+}
+.button .myButton {
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 1rem 0 0 -1rem;
+  width: 10rem;
+  font-family: var(--fs8);
+  font-weight: 900;
+}
+.button .myButton:hover {
+  background: black;
+  color: white;
+  border: yellow solid;
+  font-family: var(--fs9);
+  font-weight: 900;
+}
+.reservationForm hr {
+  margin: 1rem 0 0 0;
+}
+/* Right */
+.contactMap {
+  border-radius: 20px;
+  margin: 1rem 0 0 0;
+}
+.map {
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 20px;
+  width: 70%;
+  height: 35vh;
+  margin: 5rem auto;
+}
+.contactMap h3 {
+  margin: 3rem 0 -5rem 0;
+  font-family: var(--fs10);
+  font-weight: 900;
+  color: white;
+  padding: 20px;
+}
+.contactMap p {
+  color: yellow;
+  font-family: var(--fs2);
+  margin: 0 2rem 2rem 2rem;
+  text-align: justify;
+}
+.map iframe {
+  width: 80%;
+  height: 25vh;
+  border-radius: 20px;
+  margin: 1rem 0 2rem 0;
+}
+.map p {
+  color: white;
+  font-family: var(--fs10);
+}
+ /* Services Section */
+ .services {
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 100%; height: 85vh;
+  margin: -2rem 0 0 0;
+  background-image: linear-gradient(to right, rgba(48, 185, 240, 0), rgb(92, 199, 241));
+}
+.services h1 {
+  padding: 5rem 0 0 0;
+  text-align: center;
+  text-decoration-line: underline;
+  color: white;
+  font-family: var(--fs2);
+}
+.services p {
+  padding: 30px;
+  margin: 2rem 0 0 0;
+  font-family: var(--fs10);
+}
+ #services {
+  border: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  text-align: center;
+  gap: 20rem;
+  padding: 1rem 6rem 0 6rem;
+}
+.services_1 {
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 50px 0 30px 30px;
+  border: .1rem rgba(72, 206, 240, 0.4) solid;
+}
+.services_2 {
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 50px 0 30px 30px;
+  border: .1rem rgba(42, 143, 168, 0.4) solid;
+}
+.services_3 {
+  box-shadow: 0 10px 10px rgba(72, 206, 240, 0.4);
+  border-radius: 50px 0 30px 30px;
+  border: .1rem rgba(18, 73, 87, 0.4) solid;
+}
+.services_1 img {
+  vertical-align: middle;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+.services_1 h2 {
+  color: gray;
+  font-family: var(--fs10);
+  font-weight: 600;
+  font-size: medium;
+  margin-top: 50px;
+}
+.services_2 img {
+  vertical-align: middle;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+.services_2 h2 {
+  color: gray;
+  font-family: var(--fs10);
+  font-weight: 600;
+  font-size: medium;
+  margin-top: 50px;
+}
+.services_3 img {
+  vertical-align: middle;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+.services_3 h2 {
+  color: gray;
+  font-family: var(--fs10);
+  font-weight: 600;
+  font-size: medium;
+  margin-top: 50px;
+}
+.serviceMessage p{
+  margin: 30px 0 20px 0;
+  padding: 20px;
+  text-align: justify;
+  font-family: var(--fs9);
+  color: rgb(107, 107, 46);
+}
+.serviceMessage p:hover{
+  color: rgb(156, 67, 67);
+  font-family: var(--fs11);
+  font-size: 18px;
+}
+ /* Rent Section */
+ .rent {
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 100%; height: 85vh;
+  margin: -2rem 0 0 0;
+  background-image: linear-gradient(to right, rgba(225, 230, 231, 0),rgb(201, 155, 199), rgb(100, 179, 211));
+}
+.rent h1 {
+  padding: 5rem 0 0 0;
+  text-align: center;
+  text-decoration-line: underline;
+  color: white;
+  font-family: var(--fs2);
+}
+ #rent {
+  border: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  text-align: center;
+  gap: 20rem;
+  padding: 2rem 6rem 0 6rem;
+}
+.rent p {
+  margin: 10rem 5rem 0 5rem;
+}
+.car {
+  box-shadow: 0 10px 10px rgba(7, 7, 7, 0.4);
+  border-radius: 20px 10px 10px 30px;
+  border: .1rem rgba(72, 206, 240, 0.4) solid;
+}
+.car p {
+  margin: 20px 0 20px 30px;
+  text-align: justify;
+}
+.car img {
+  vertical-align: middle;
+  width: 140px;
+  height: 140px;
+  border-radius: 10%;
+  margin-top: 40px;
+  border: .1rem rgba(18, 73, 87, 0.4) solid;
+  padding: 5px;
+}
+.car h4 {
+  font-size: 20px;
+  font-family: var(--fs8);
+  padding: 30px 0 60px 0;
+}
+.suv p {
+  margin: 20px 0 20px 30px;
+  text-align: justify;
+}
+.suv {
+  box-shadow: 0 10px 10px rgba(7, 7, 7, 0.4);
+  border-radius: 20px 10px 10px 30px;
+  border: .1rem rgba(42, 143, 168, 0.4) solid;
+}
+.suv img {
+  vertical-align: middle;
+  width: 140px;
+  height: 140px;
+  border-radius: 10%;
+  margin-top: 40px;
+  border: .1rem rgba(18, 73, 87, 0.4) solid;
+  padding: 5px;
+}
+.suv h4  {
+  font-size: 20px;
+  font-family: var(--fs8);
+  padding: 30px 0 60px 0;
+}
+.car a, 
+.suv a, 
+.truck a  {
+  text-decoration: none;
+  color: rgb(126, 52, 52);
+}
+.truck  {
+  box-shadow: 0 10px 10px rgba(43, 26, 26, 0.4);
+  border-radius: 20px 10px 10px 30px;
+  border: .1rem rgba(18, 73, 87, 0.4) solid;
+}
+.truck p {
+  margin: 20px 0 20px 30px;
+  text-align: justify;
+}
+.truck img {
+  vertical-align: middle;
+  width: 140px;
+  height: 140px;
+  border-radius: 10%;
+  margin-top: 40px;
+  border: .1rem rgba(18, 73, 87, 0.4) solid;
+  padding: 5px;
+}
+.truck h4 {
+  font-size: 20px;
+  font-family: var(--fs8);
+  padding: 30px 0 60px 0;
+}
+
+/* RentInfo Section */
+#rentInfo1,
+#rentInfo2,
+#rentInfo3 {
+  border: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  text-align: center;
+}
+.rentInfos a  {
+  text-decoration: none;
+  color: #080808;
+  font-family: var(--fs10);
+  font-size: 20px;
+  text-align: left;
+}
+.rentInfo h1 {
+  padding: 3rem 0 1rem 0;
+  text-align: center;
+  text-decoration-line: underline;
+  color: rgb(5, 5, 5);
+  font-family: var(--fs13);
+}
+.rentInfos p {
+text-align: justify;
+padding: 20px;
+margin: 2rem 0 0 0;
+}
+.rentInfos h3 {
+  text-align: left;
+  font-size: 15px;
+  margin: 0 0 0 10rem;
+}
+.rentInfos .capacity {
+  text-align: center;
+  font-size: 10px;
+  margin: -10px 0 0 0;
+}
+.rentInfos .bags {
+  text-align: right;
+  font-size: 10px;
+  margin: -12px 10rem 0 0;
+}
+.infoImage img {
+  vertical-align: middle;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 10%;
+  margin-top: 40px;
+
+}
+ /* SignIn Section */
+ #mySignInBtn {
+  background-color:#ccddee;
+  color: white;
+  font-family: var(--fs9);
+  font-weight: 900;
+  color: black;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  min-width: 140px;
+  text-align: center;
+  margin: 20px 30px 0 10px;
+}
+#mySignInBtn:hover {
+  color:rgb(111, 121, 89);
+  font-size: 20px;
+  font-family: var(--fs2);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #31dae6;
+  width: 20rem;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 20px 0 20px 0;
+  overflow: hidden;
+}
+.dropdown-content1 a {
+  color: yellow;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+  background: Black;
+  width: 15rem;
+}
+.dropdown a:hover {
+  background: Black;
+}
+.show {
+  display: block;
+}
+form .eMail, form .p_assword {
+  width: 16rem;
+  border-radius: 10px;
+}
+form .my_Button {
+  font-size: 10px;
+  padding: 5px;
+  width: 60px;
+  border-radius: 19px;
+}
+#sign_In {
+  font-size: 11px;
+  margin: 0 0 0 6rem;
+}
+/* Mobile Size */
+#s_ignIn {
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 100%; 
+  height: 85vh;
+  margin: -2rem 0 0 0;
+}
+ /* SignUp Section */
+ #mySignUpBtn {
+  background-color:#ccddee;
+  color: white;
+  font-family: var(--fs9);
+  font-weight: 900;
+  color: black;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  min-width: 140px;
+  text-align: center;
+  margin: 20px 80px 0 20px;
+}
+#mySignUpBtn:hover {
+  color:rgb(111, 121, 89);
+  font-size: 20px;
+  font-family: var(--fs2);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  padding: 10px 10px;
+  background-color: #31dae6;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content2 a {
+  color: yellow;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+  background: Black;
+  width: 15rem;
+}
+.dropdown a:hover {
+  background: Black;
+}
+.show {
+  display: block;
+}
+form #f_Name, form #l_Name {
+  width: 16rem;
+  border-radius: 10px;
+}
+#sign_Up {
+  font-size: 10px;
+  margin: 0 0 1rem 4rem;
+}
+/* Footer Section */
+.footer  {
+  border: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 40px 20px 40px;
+  text-align: center;
+  gap: 20rem;
+  background: rgb(189, 193, 194);
+}
+.footerAbout p {
+  text-align: justify;
+  font-family: var(--fs8);
+  color: white;
+}
+.mediaIcon .fa {
+  padding: 15px;
+  width: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 100px;
+}
+.mediaIcon .fa:hover {
+    opacity: 0.7;
+}
+.mediaIcon .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.mediaIcon .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.mediaIcon .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.mediaIcon .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.mediaIcon .fa-instagram {
+  background: #125688;
+  color: white;
+}
+.footerName .copyright {
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+.footerName {
+  background: #2f3036;
+}
+.footerName a {
+  text-decoration: none;
+  color: white;
+}
+.footerName p {
+  color: white;
+  text-decoration: none;
+}
+.footerPages ul a {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: var(--fs9);
+}
+/*Media Section*/
+@media only screen and (min-width: 1360px) {
+  #signInBtn { 
+    display: none; 
+  }
+  #signUpBtn { 
+    display: none; 
+  }
+  .signIn {
+    display: none; 
+  }
+  .signUp {
+    display: none; 
+  }
+  /* Menu Section */
+  /* Home Section */
+  /* About Section */
+  /* Contact Section */
+  /* Services Section */
+  /* Rent Section */
+ }
+@media only screen and (max-width: 1200px) {
+ /* Menu Section */
+ /* Home Section */
+ /* About Section */
+ /* Contact Section */
+ /* Services Section */
+ /* Rent Section */
+}
+@media only screen and (max-width : 992px){
+ /* Menu Section */
+ .mobile-menu .lines {
+  border-bottom: 15px double #f8f8f8; 
+  border-top: 5px solid #f8f8f8; 
+  content:"";
+  height: 5px; 
+  width:20px;
+  padding-right:15px;
+  float: right;
+ }
+ .mobile-menu ul {
+  position: static;
+  display: none;
+ }
+ .mobile-menu li {
+  margin-bottom: 1px;
+ }
+ .mobile-menu ul li, .mobile-menu li a {
+  width: 100%;
+ }
+ .mobile-menu .show-menu {
+  display:block;
+ }
+ .dropdown-content0 {
+  margin: 0 0 0 -1rem;
+}
+.dropdown-content0 a {
+  padding: 5px 5px; 
+}
+ /* Home Section */
+ /* About Section */
+ /* Contact Section */
+ /* Services Section */
+ /* Rent Section */
+}
+@media only screen and (max-width: 768px) {
+ /* Menu Section */
+ /* Home Section */
+ /* About Section */
+ /* Contact Section */
+ /* Services Section */
+ /* Rent Section */
+ /* SignIn Section */
+ /* SignUp Section */
+}
+@media only screen and (max-width: 600px) {
+ /* Menu Section */
+ .info {
+  display: none;
+ }
+ /* Home Section */
+ #home {
+  grid-template-columns: 1fr;
+  margin-top: -2rem;
+}
+
+div.elem-group {
+  width: 100%;
+  margin: 0 0 0 0;
+}
+.myLocation .location {
+  width: 85%;
+}
+.button {
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+.button .myButton {
+  padding: 5px;
+}
+.reservationForm hr {
+  margin: 1rem 0 0 0;
+}
+.image img {
+  width: 70%;
+  height: 70%;
+}
+.image h3 {
+  padding: 20px;
+}
+.home {
+  width: 100%; 
+  height: 200vh;
+}
+.home h1 {
+  font-size: 20px;
+  color: #080808;
+  font-family: var(--fs12);
+  margin: 2rem 0 0 0;
+}
+ /* About Section */
+.about {
+  width: 100%; 
+  height: 200vh;
+}
+ #about {
+  grid-template-columns: 1fr;
+}
+.aboutImage {
+  margin: -3.5rem 0 0 0;
+}
+.aImage p {
+  margin: -2rem 0 0 0;
+}
+.message h1 {
+  margin: 8rem 0 0 0;
+}
+.about p {
+  color: black;
+}
+.aImage p {
+  color: yellow;
+}
+#about2 {
+  grid-template-columns: 1fr;
+}
+#about3 {
+  grid-template-columns: 1fr;
+}
+.about_2 img {
+  margin: -8rem 0 0 0;
+}
+.about_3 img {
+  margin: -8rem 0 0 0;
+}
+.about2 h1 {
+  font-size: 20px;
+  color: rgb(252, 3, 3);
+  font-family: var(--fs9);
+}
+ /* Contact Section */
+ #contactPage {
+  grid-template-columns: 1fr;
+ }
+ form input, form textarea {
+  width: 85%;
+}
+.contactForm p {
+  color: white;
+}
+.contactPage { 
+  height: 160vh;
+}
+.contactForm h3 {
+  margin: 2rem 0 0 0;
+}
+.contactMap h3 {
+  margin: -7rem 0 0 0;
+}
+.contactMap {
+  margin: -3rem 0 0 0;
+}
+.contactPage h1 {
+  display: none;
+}
+ /* Services Section */
+ #services {
+  grid-template-columns: 1fr;
+ }
+ .services {
+  height: 270vh;
+}
+.services_1 img, 
+.services_2 img, 
+.services_3 img {
+  margin: 0 4rem 0 4rem;
+}
+.services_1 {
+  margin: 0 0 0 -5rem;
+  width: 18rem;
+}
+.services_2 {
+  margin: -12rem 0 0 -5rem;
+  width: 18rem;
+}
+.services_3 {
+  margin: -12rem 0 0 -5rem;
+  width: 18rem;
+}
+.services h1 {
+  font-size: 23px;
+  color: rgb(3, 3, 3);
+  font-family: var(--fs6);
+}
+ /* Rent Informatio Section */
+ .about h1 {
+  font-size: 20px;
+  color: black;
+  font-family: var(--fs9);
+}
+ /* SignIn Section */
+ .signInForm {
+   margin: 2rem auto;
+   text-align: center;
+ }
+ .signIn_Form #email{
+  margin: 10rem 0 0 0;
+  border-radius: 15px 0 15px 0;
+  box-shadow: 0 10px 10px rgba(22, 71, 83, 0.4);
+}
+.signIn_Form #password{
+  border-radius: 15px 0 15px 0;
+  box-shadow: 0 10px 10px rgba(22, 71, 83, 0.4);
+}
+.signIn_Form .myButton{
+  font-size: 10px;
+  border-radius: 15px 0 15px 0;
+  box-shadow: 0 10px 10px rgba(22, 71, 83, 0.4);
+}
+.signIn_Form .myButton:hover{
+  background-color: chartreuse;
+  color: #2f3036;
+}
+#s_ignIn {
+  margin: 40px 0 0 0;
+  height: 50vh;
+  border-radius: 200px 0 150px 60px;
+}
+.signIn {
+  height: 95vh;
+  background-image: linear-gradient(to right, rgba(17, 63, 82, 0), rgb(2, 21, 29));
+}
+.signIn p {
+  margin: 8rem 0 0 0;
+  padding: 15px;
+  font-size: 11px;
+  font-family: var(--fs9);
+  color: yellow;
+}
+#s_ignIn p {
+  margin: -3rem 0 0 0;
+  text-align: center;
+  font-size: 50px;
+  font-family: var(--fs13);
+  color: white;
+  padding-top: 8rem;
+}
+ /* SignUp Section */
+ .signUpForm {
+  margin: 2rem auto;
+  text-align: center;
+}
+.signUp_Form #email{
+ border-radius: 15px 0 15px 0;
+ box-shadow: 0 10px 10px rgba(22, 71, 83, 0.4);
+}
+.signUp_Form #fname{
+ border-radius: 15px 0 15px 0;
+ box-shadow: 0 10px 10px rgba(22, 71, 83, 0.4);
+}
+.signUp_Form #lname{
+  border-radius: 15px 0 15px 0;
+  box-shadow: 0 10px 10px rgba(22, 71, 83, 0.4);
+ }
+ .signUp_Form #password{
+  border-radius: 15px 0 15px 0;
+  box-shadow: 0 10px 10px rgba(22, 71, 83, 0.4);
+ }
+.signUp_Form .myButton{
+ font-size: 10px;
+ border-radius: 15px 0 15px 0;
+ box-shadow: 0 10px 10px rgba(22, 71, 83, 0.4);
+}
+.signUp_Form .myButton:hover{
+ background-color: chartreuse;
+ color: #2f3036;
+}
+#signUp {
+ margin: 40px 0 0 0;
+ height: 50vh;
+ border-radius: 70px 0 80px 10px;
+
+}
+.signUp {
+ height: 95vh;
+ background-image: linear-gradient(to right, rgba(17, 63, 82, 0), rgb(95, 127, 141));
+}
+.signUp p {
+ margin: 8rem 0 0 0;
+ padding: 15px;
+ font-size: 11px;
+ font-family: var(--fs9);
+ color: black;
+}
+#signUp p {
+ margin: -3rem 0 0 0;
+ text-align: center;
+ font-size: 30px;
+ font-family: var(--fs8);
+ color: yellow;
+ padding-top: 5rem;
+}
+#signUp h5 {
+  margin: -3rem 0 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-family: var(--fs2);
+  color: yellow;
+  padding-top: 5rem;
+ }
+ /* Footer Section */
+ .footer  {
+  grid-template-columns: 1fr;
+}
+.mediaIcon {
+  margin: -15rem 0 0 0;
+}
+.footerPages  {
+  margin: -25rem 0 0 0;
+}
+.footer {
+  height: 90vh;
+}
+.footerAbout p {
+  margin: 1rem 0 0 0;
+}
+/* Rent Section */
+#rent {
+  grid-template-columns: 1fr;
+}
+ .rent {
+  height: 270vh;
+}
+.car img, 
+.suv img, 
+.truck img {
+  margin: 2rem 4rem 0 4rem;
+}
+.car {
+  margin: 0 0 0 -5rem;
+  width: 18rem;
+}
+.suv{
+  margin: -12rem 0 0 -5rem;
+  width: 18rem;
+}
+.truck {
+  margin: -12rem 0 0 -5rem;
+  width: 18rem;
+}
+.rent h1 {
+  color: white;
+  font-family: var(--fs9);
+  font-size: 18px;
+}
+/* RentInfo section */
+#rentInfo1,
+#rentInfo2,
+#rentInfo3 {
+  grid-template-columns: 1fr;
+}
+.rentInfos h3,
+.rentInfos .capacity, 
+.rentInfos .bags {
+  text-align: center;
+  font-size: 15px;
+  margin: 0 0 0 0;
+}
+.rentInfo h1 {
+  color: rgb(131, 60, 60);
+  font-family: var(--fs2);
+  font-size: 15px;
+}
+
+}
